@@ -1,0 +1,160 @@
+*{margin:0;padding:0;vertical-align: baseline;}
+html{
+    background: #230007;
+    font-family: Arial;
+}
+
+.logo{
+    margin: 10px auto;
+}
+
+.logo > img, .img-respo{
+    max-width:100%;
+    display:block
+}
+.hitam{
+    background: #000;
+}
+main{
+    margin:20px;
+}
+article{
+    color:#fedc3d;
+    padding:15px;
+}
+article > p{
+    margin:15px 0;
+}
+article .button, article .buttonan{
+    text-align: center;
+}
+.button, .buttonan{
+    display: block;
+    color:#fff;
+    text-decoration: none;
+}
+.button{
+    background:#490609;
+}
+.wa{
+    background:#25D366;
+}
+.lc{
+    background:#ffcf00;
+}
+.fb{
+    background:#3b5998
+}
+.ig{
+    background:#C13584;
+}
+.tw{
+    background:#1DA1F2;
+}
+.pt{
+    background:#E60023;
+}
+.button:hover{
+    background:#c90;
+}
+.half{
+    width:50%;
+    float:left;
+}
+footer{
+    color:#6c161a;
+}
+/* Nav styles */
+/*navigation*/ 
+ 
+#primary_nav ul {
+    list-style: none;
+    padding: 5px 0;
+}
+.row:after{
+    content: "";
+  display: table;
+  clear: both;
+}
+#primary_nav li a {
+    display: block;
+    padding: 0 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    letter-spacing: 0.1em;
+    line-height: 2em;
+    height: 2em;
+    border-bottom: 1px solid #6c161a;
+    background:#490609;
+}
+ 
+#primary_nav li:last-child a {
+    border-bottom: none;
+}
+ 
+#primary_nav li a:hover,
+#primary_nav li a:focus {
+    color: #1c1c1c;
+    background: #c90;
+}
+.slider{
+    box-shadow: 0 1px 0 0 #000;
+}
+
+/* for higher resolution */
+@media screen and (min-width:600px){
+    .wrap{
+        width:960px;
+        margin:0 auto;
+    }
+    #menunya {
+        position: relative;
+    }
+    .logo{
+        width:300px;
+    }
+    a.to_nav {
+        display: none;
+    }
+    #primary_nav {
+        position: absolute;
+        top: 5px;
+        background: none;
+    }
+     
+    #primary_nav li {
+        display: inline;
+    }
+     
+    #primary_nav li a {
+        float: left;
+        border: none;
+        padding: 0 23px;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        border-radius: 2px;
+    }
+    #primary_nav li:last-child a{
+        padding: 0 31.5px;
+    }
+    .slider{
+        margin-top:40px;
+    }
+    .button, .buttonan{
+        padding:10px 100px;
+    }
+}
+
+/* for smaller resolution */
+@media screen and (max-width:599px){
+    .logo{
+        width:200px;
+    }
+    .button, .buttonan{
+        padding:10px 0;
+    }
+}
+
